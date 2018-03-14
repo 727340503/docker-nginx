@@ -25,7 +25,7 @@ rm /tmp/nginx.tgz
 COPY nginx.conf /tmp/nginx/conf/
 
 RUN cd /tmp/nginx && \
-./configure --prefix=/app/nginx/ && \
+./configure --prefix=/app/nginx && \
 make && \
 make install && \
 rm -rf /tmp/nginx
